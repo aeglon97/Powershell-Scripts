@@ -31,7 +31,6 @@ function userPrompt() {
         #Write-Host $past_wifis[$i]
     }
 
-
     $user_choice = Read-Host "`nWhich Wifi network would you like the password to? Type the NUMBER"
 
     $ssid_details = netsh wlan show profile $past_wifis[$user_choice] key=clear
